@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wasif Naveed - Full Stack Software Engineer & AI Enthusiast from Faisalabad, Pakistan.">
+    <meta name="keywords" content="Wasif Naveed, Full Stack Developer, Software Engineer, React, Next.js, AI, Pakistan">
+    <meta name="author" content="Wasif Naveed">
+    <title>Wasif Naveed | Software Engineer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader-container">
+        <div class="loader-logo">&lt;W/&gt;</div>
+        <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="glass-header" id="header">
+        <nav class="nav-container">
+            <a href="#home" class="logo magnetic">&lt;W<span class="highlight">/</span>&gt;</a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="btn primary-btn magnetic">Contact Me</a>
+            </div>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <canvas id="particles-canvas"></canvas>
+            <div class="hero-content reveal-up">
+                <p class="greeting">Hello World, I'm</p>
+                <h1 class="glitch" data-text="Wasif Naveed">Wasif Naveed</h1>
+                <h2 class="typing-container">I am a <span id="typing-text"></span><span class="cursor">|</span></h2>
+                <p class="hero-bio">Passionate Computer Science student and aspiring Full Stack Software Engineer transforming ideas into functional, visually appealing, and high-performance AI-integrated applications.</p>
+                
+                <div class="hero-actions">
+                    <a href="#projects" class="btn primary-btn glow-btn magnetic">View Work</a>
+                    <a href="#contact" class="btn secondary-btn magnetic">Let's Talk</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/thxwassu" target="_blank" class="magnetic" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/thx_wassu" target="_blank" class="magnetic" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/just_wasii?igsh=anlneW1ucnp5OW9i" target="_blank" class="magnetic" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1LUmwMvdL2/" target="_blank" class="magnetic" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://youtube.com/@bse_plus?si=1T-o7URy8nRX1dwj" target="_blank" class="magnetic" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title reveal-up">About <span class="highlight">Me</span></h2>
+                <div class="about-grid">
+                    <div class="about-image-wrapper reveal-left">
+                        <div class="image-border">
+                            <img src="assets/images/profile-placeholder.jpg" alt="Wasif Naveed" class="profile-img">
+                        </div>
+                        <div class="experience-badge glass-card floating">
+                            <span class="number">BS</span>
+                            <span class="text">Computer<br>Science</span>
+                        </div>
+                    </div>
+                    <div class="about-content reveal-right">
+                        <div class="bio-text">
+                            <p>My journey into technology began with curiosity about how websites and software are built. Over time, that curiosity evolved into a commitment to continuously learning new technologies and building projects that challenge me to grow. Technology isn't just about writing code—it's about creating meaningful experiences.</p>
+                            <p>I specialize in building responsive, scalable applications using React, Next.js, Node.js, and Supabase. Beyond web development, I actively explore how AI can enhance software and automate workflows. Every challenge is an opportunity to improve.</p>
+                            <p>Currently studying at <strong>Government College University Faisalabad (Graduating Sept 2027)</strong>. I am open to internships, freelance opportunities, and collaborative projects that make a meaningful impact.</p>
+                        </div>
+                        <div class="personal-info glass-card">
+                            <div class="info-item"><span>Location:</span> Faisalabad, Pakistan</div>
+                            <div class="info-item"><span>Email:</span> wasifnavid0083@gmail.com</div>
+                            <div class="info-item"><span>Availability:</span> Open to Freelance & Internships</div>
+                            <div class="info-item"><span>Languages:</span> English, Urdu</div>
+                        </div>
+                        <a href="assets/resume/Wasif_Naveed_Resume.pdf" download class="btn primary-btn mt-2 magnetic">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title reveal-up">Technical <span class="highlight">Arsenal</span></h2>
+                <div class="skills-grid">
+                    <!-- Frontend -->
+                    <div class="skill-category glass-card reveal-up">
+                        <h3><i class="fas fa-laptop-code highlight"></i> Frontend & Design</h3>
+                        <div class="skill-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <!-- Backend -->
+                    <div class="skill-category glass-card reveal-up" style="transition-delay: 0.1s;">
+                        <h3><i class="fas fa-server highlight"></i> Backend & Languages</h3>
+                        <div class="skill-tags">
+                            <span>Python</span><span>Node.js</span><span>Go</span><span>PHP</span><span>Java</span><span>C</span><span>C++</span>
+                        </div>
+                    </div>
+                    <!-- Database & Tools -->
+                    <div class="skill-category glass-card reveal-up" style="transition-delay: 0.2s;">
+                        <h3><i class="fas fa-database highlight"></i> Databases & Tools</h3>
+                        <div class="skill-tags">
+                            <span>PostgreSQL</span><span>SQL</span><span>MongoDB</span><span>Firebase</span><span>Supabase</span><span>Git</span><span>VS Code</span>
+                        </div>
+                    </div>
+                    <!-- Soft Skills -->
+                    <div class="skill-category glass-card reveal-up" style="transition-delay: 0.3s;">
+                        <h3><i class="fas fa-users highlight"></i> Professional Skills</h3>
+                        <div class="skill-tags outline-tags">
+                            <span>Problem Solving</span><span>Teamwork</span><span>Critical Thinking</span><span>Adaptability</span><span>Communication</span><span>Graphic Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Populated by JS) -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title reveal-up">Featured <span class="highlight">Work</span></h2>
+                <div id="projects-container" class="projects-grid">
+                    <!-- Cards injected via main.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section id="stats" class="stats-section reveal-up">
+            <div class="container">
+                <div class="stats-grid glass-card">
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="15">0</h3>
+                        <p>Tech Stack</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="20">0</h3>
+                        <p>Projects Built</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="1000">0</h3>
+                        <p>Hours Coding</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="2027">0</h3>
+                        <p>Graduation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title reveal-up">Let's <span class="highlight">Connect</span></h2>
+                <div class="contact-grid">
+                    <div class="contact-info glass-card reveal-left">
+                        <h3>Get In Touch</h3>
+                        <p>Looking to start a project, need a frontend developer, or just want to say hi? My inbox is always open.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="method">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>wasifnavid0083@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="method">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+92 322 055 1220</p>
+                                </div>
+                            </div>
+                            <div class="method">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Faisalabad, Pakistan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formspree placeholder link provided in action -->
+                    <form class="contact-form glass-card reveal-right" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="input-group">
+                            <input type="text" name="name" id="name" required placeholder="Your Name">
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="email" id="email" required placeholder="Your Email">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="subject" id="subject" required placeholder="Subject">
+                        </div>
+                        <div class="input-group">
+                            <textarea name="message" id="message" rows="5" required placeholder="Your Message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn submit-btn magnetic">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">&lt;W<span class="highlight">/</span>&gt;</div>
+                <div class="footer-social">
+                    <a href="https://github.com/thxwassu" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/thx_wassu" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/just_wasii?igsh=anlneW1ucnp5OW9i" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Wasif Naveed. Designed & Built with <i class="fas fa-heart highlight"></i>.</p>
+                <a href="#home" class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
